@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
+
+    <title>Guia de hoteles</title>
+  </head>
+  <body>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+          <a href="./index.html" class="navbar-brand">Hoteles</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nvbMenuIndex" aria-controls="nvbMenuIndex" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="nvbMenuIndex">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./about.html">Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./price.html">Precios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./policy.html">Terminos y Condiciones</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./contact.html">Contacto</a>
+                </li>
+            </ul>
+          </div>
+      </nav>
+      <div class="main">
+        <div class="jumbotron">
+            <h1>Hoteles</h1>
+        </div>
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item active" aria-current="page">Home</li>
+                </ol>
+            </nav>
+            <hr class="pb-2">
+
+            <div id="crlSlice" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/images/el-bluff-beach.jpg" alt="Responsive image" class="img-fluid" style="width: 100%; height: 350px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/c2.jpg" alt="Responsive image" class="img-fluid" style="width: 100%; height: 350px;">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/c3.jpeg" alt="Responsive image" class="img-fluid" style="width: 100%; height: 350px;">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#crlSlice" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                  </a>
+                  <a class="carousel-control-next" href="#crlSlice" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                  </a>
+            </div>
+
+            <hr class="pb-2">
+            <div class="row">
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#funciona"
+                    aria-expanded="false" aria-controls="multiCollapse1">
+                        ¿Cómo funciona?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#reserva"
+                    aria-expanded="false" aria-controls="multiCollapse2">
+                        ¿Dónde puedo Reservar?
+                    </button>
+                </div>
+                <div class="col-sm-4">
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#pago"
+                        aria-expanded="false" aria-controls="multiCollapse3">
+                        ¿Cómo pago?
+                    </button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 collapse multi-collapse" id="funciona">
+                    <p>
+                        <h3>¿Cómo funciona?</h3>
+                        <p>Busca los hoteles de acuerdo a tu preferencia.</p>
+                    </p>
+                </div>
+                <div class="col-sm-4 collapse multi-collapse" id="reserva">
+                    <p>
+                        <h3>¿Dónde puedo Reservar?</h3>
+                        <p>Elige la ciudad que te interesa y luego realizá tu reserva con tus datos.</p>
+                    </p>
+                </div>
+                <div class="col-sm-4 collapse multi-collapse" id="pago">
+                    <p>
+                        <h3>¿Cómo pago?</h3>
+                        <p>Utiliza tu tarjeta favorita.</p>
+                    </p>
+                </div>
+            </div>
+            <hr class="pb-2">
+            <div class="card-columns">
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel image" class="card-img-top" >
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel La Gran Managua</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado en el centro de managua a unos minutos de todos los centro comercales.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Barceló Managua</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado a 3 minutos del centro.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel y Restaurante La casa del Chocolate</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado en la laguna de apoyo.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title" data-toggle="tooltip" data-placement="top" title="Las primeras 10 reservas obienen un tour por la isla gratis!">Hotel Litle Corn Island</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado en la Corn Island.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/metro.jpg" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel La Grn Sultana</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado a 3 minutos del centro.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Granada</h4>
+                            <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado a 3 minutos del centro.</p>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+                <div class="card ml-2 card-hotel">
+                    <img src="/images/barcelo.png" alt="hotel img" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Hotel Metropolitano</h5>
+                        <h6 class="card-subtitle text-muted">Nicaragua</h6>
+                        <p class="card-text">Hotel ubicado a 3 minutos del centro.</p>
+                        <button class="btn btn-outline-success" data-toggle="modal" data-target="#contacto">
+                            <span class="oi oi-inbox"></span> Contacto
+                        </button>
+                    </div>
+                    <button class="btn btn-primary" data-toggle="popover" title="Promociones" data-content="Consulta las promociones antes de reservar!">
+                        <span class="oi oi-plus margin-btn-icon"></span> Reservar
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="modal fade" id="contacto" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Contacto con el hotel</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="recipient-name" class="col-form-label">Tu email:</label>
+                            <input type="text" placeholder="Ingrese el email" class="form-control" id="recipient-name"
+                                data-toggle="tooltip" data-placement="top" title="Email de contacto">
+                        </div>
+                        <div class="form-group">
+                            <label for="message-text" class="col-form-label">Mensaje:</label>
+                            <textarea class="form-control" placeholder="Ingrese el mensaje" id="message-text"
+                            data-toggle="tooltip" data-placement="top" title="Descripción del mensaje"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Enviar</button>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-sm-4 d-flex flex-column">
+                    <a href="https://www.facebook.com/"> 
+                        <span class="oi oi-social-facebook"></span> Facebook
+                    </a>
+                    <a href="https://twitter.com/">
+                        <span class="oi oi-social-twitter"></span> Twitter
+                    </a>
+                    <a href="https://www.instagram.com/">
+                        <span class="oi oi-social-instagram"></span> Instagram
+                    </a>
+                    <a href="https://www.google.com.ni">
+                        <span class="oi oi-social-google-plus"></span> Google+
+                    </a>
+                </div>
+                <div class="col-sm-4">
+                    <h3>Oficina Central</h3>
+                    <p><span class="oi oi-home margin-icon"></span>Ningun Lado</p>
+                    <p><span class="oi oi-phone margin-icon"></span>999999999999</p>
+                    <p><span class="oi oi-inbox margin-icon"></span>info@algundia.com</p>
+                </div>
+                <div class="col-sm-4 d-flex flex-column align-items-end">
+                    <a href="./about.html">Nosotros</a>
+                    <a href="./price.html">Precios</a>
+                    <a href="./policy.html">Terminos y condiciones</a>
+                    <a href="./contact.html">Contacto</a>
+                </div>
+            </div>
+        </footer>
+      </div>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip();
+            $('[data-toggle="popover"]').popover();
+            $('.carousel').carousel({
+                interval: 100
+            });
+        });
+    </script>
+  </body>
+</html>
